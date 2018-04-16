@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 140px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+  
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.bodyContainer{
+  margin: 30px;
+}
+
+.rbc-toolbar-label{
+  color:brown;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: fantasy;
+}
+
+h1, .instruction{
+  font-family: fantasy;
+}
+
+.modal{ display:block; }
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

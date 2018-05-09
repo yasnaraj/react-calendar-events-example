@@ -52,8 +52,6 @@ export default class EventDetails extends Component{
         }
 
         eventDetail[ref] = val;
-
-        console.log(eventDetail);
         this.setState({eventDetail});
     }
 

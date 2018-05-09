@@ -1,5 +1,6 @@
 import * as types from './eventActionTypes';
 import moment from 'moment';
+import localForage from "localforage";
 
 export function GetInitialEvents() {
     return async (dispatch, getState) => {
@@ -13,7 +14,18 @@ export function GetInitialEvents() {
             notes: 'Have a great day!'
         }];
 
-        dispatch({ type: types.ALL_EVENTS, allEvents })
+        localForage.getItem("AllEvents", function(err, allEve){
+            if(allEve){
+                allEvents = allEve;
+            }else{
+                localForage.setItem("AllEvents", allEvents);
+            }
+
+            dispatch({ type: types.ALL_EVENTS, allEvents });
+        });
+        
+
+        
     }
 
 }

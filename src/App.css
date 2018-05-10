@@ -24,7 +24,7 @@
 }
 
 .bodyContainer{
-  margin: 30px;
+  margin: 70px;
 }
 
 .rbc-toolbar-label{
@@ -40,7 +40,90 @@ h1, .instruction{
 
 .modal{ display:block; }
 
+.rbc-toolbar span:first-child button:first-child {
+ background-color:#28a745;
+ color: white;
+ font-weight: bold;
+}
+
+.rbc-toolbar span:first-child button:nth-child(2)  {
+  text-indent: -9999px;
+  line-height: 0; 
+  margin-left: 5px;
+}
+
+.rbc-toolbar span:first-child button:nth-child(2)::after  {
+  content: '◀';
+  text-indent: 0;
+  display: block;
+  line-height: initial; 
+  font-size: 13px;
+  
+}
+
+.rbc-toolbar span:first-child button:nth-child(3)  {
+  text-indent: -9999px;
+  line-height: 0; 
+}
+
+.rbc-toolbar span:first-child button:nth-child(3)::after  {
+  content: '▶';
+  text-indent: 0;
+  display: block;
+  line-height: initial; 
+  font-size: 13px;
+}
+
+.rbc-active{
+  background-color: #007bff !important;
+  color: white !important;
+}
+
+.rbc-header{
+  background-color: black !important;
+  color: white !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  border-radius: 5px;
+}
+
+.rbc-toolbar{
+  flex-wrap: wrap-reverse;
+}
+
+.rbc-day-bg + .rbc-day-bg, .rbc-month-row + .rbc-month-row {
+  border: none !important;
+}
+
+.rbc-off-range-bg{
+  border-radius: 10px;
+  margin-left: 1px;
+}
+
+.rbc-month-view{
+  border-radius: 10px;
+}
+
+.rbc-btn-group{
+  white-space: pre-wrap !important;
+  margin-bottom: 10px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media screen and (min-width: 1080px){
+  .bodyContainer{
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .bodyContainer{
+    margin: 2%;
+  }
 }

@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-        <h1 className="App-title">
+        <h1>
         <span className="glyphicon glyphicon-calendar" style={{marginRight: '10px'}}></span>
          Event Calendar </h1>
         </header>

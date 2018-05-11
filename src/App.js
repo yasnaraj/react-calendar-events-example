@@ -13,7 +13,10 @@ class App extends Component {
          Event Calendar </h1>
         </header>
         <EventCalendar />
-        <hr />
+        <footer>
+          <hr/>
+          <h5>Developed By: Yasna R. | {(new Date().getFullYear()).toString()} </h5>
+          </footer>
       </div>
     );
   }

@@ -6,3 +6,12 @@ This application utilizes <a href="https://github.com/intljusticemission/react-b
 
 It also showcases the use of <a href="https://github.com/localForage/localForage"> localForage </a> to store the calendar events for offline use as well as to retrieve it in future instances.
 
+To clone and run  this application locally, execute the following command:
+
+```
+git clone https://github.com/yasnaraj/react-calendar-events-example.git
+cd react-calendar-events-example
+npm install
+npm start
+```
+
